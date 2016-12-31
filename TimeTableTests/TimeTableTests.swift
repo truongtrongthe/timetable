@@ -34,6 +34,16 @@ class TimeTableTests: XCTestCase {
         }
     }
     
+    func testBua()
+    {
+        let t = TimeTable()
+        
+        self.measure {
+            _ = t.multiply(100, b: 500)
+        }
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         let timeTable = TimeTable()
